@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+@media screen and (max-width:897px) {
+.header-group >.header-txt2{top:81%;}
+.header-group >.header-txt2 h2{font-size: 20pt;}
+.header-group >.header-txt1 h1{font-size: 40pt;}
+.header-group >.header-txt3{left:-8%;}
+.main_filter{display: none;} 
+    
+}
+ @media screen and (max-width:560px) {
+.header-group >.header-txt3{left:-20%;}
+}

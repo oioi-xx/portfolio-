@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* 공통속성 */
+.container{width: 1170px; margin: 0 auto;}
+/*font*/
+@font-face {
+      src :  url(../fonts/aespa_s_logo_font_by_bunny_425_dee60cu.ttf);
+      font-family: "aespa";
+}
+@font-face {
+      src : url(../fonts/Jan%20Charv%C3%A1t%20-%20Velodroma%20Basic%20SuperWide.otf);
+      font-family: "superwide";
+}
+@font-face {
+      src : url(../fonts/Jan%20Charv%C3%A1t%20-%20Velodroma%20Basic%20Wide.otf);
+      font-family: "wide";
+}
+@font-face {
+      src :  url(../fonts/Jan%20Charv%C3%A1t%20-%20Velodroma%20Basic.otf);
+      font-family: "basic";
+}
+
+
+/* 오른쪽 고정 pagination */
+.fixed_nav{
+	position: fixed;
+	z-index: 999;
+	top: 50%;
+	right: 100px;
+	display: flex;
+	flex-direction: column;
+	transform: translateY(-50%);
+}
+.fixed_nav a{ 
+	text-indent: -99999em;
+	width: 12px;
+	height: 12px;
+	border: 2px solid #879099;
+	box-sizing: border-box;
+	border-radius: 50%;
+	margin-bottom: 16px;
+}
+.fixed_nav a:last-child{margin-bottom: 0;}
+.fixed_nav a.active{border: none; background: #fff }
+.fixed_nav a.active-black{border: none; background: #0b131a }
+
+/* header */
+.header nav{
+	position: fixed;
+	z-index: 999;
+	left: 0;
+	top: 0;
+	right: 0;
+	padding: 0 47px;
+	height: 120px;
+	display: flex;
+	justify-content: space-between;
+	background: transparent;
+	align-items: center;
+	box-shadow: 0 3px 3px rgba(0,0,0,0);
+	transition: background .3s, box-shadow: .3s;
+}
+.svg-inline--fa {
+    font-size: 2em;
+	color: #fff;
+}
+
+
+
+.num_animation{width:500px; padding:20px; font-size:32px; margin: 0 auto; text-align:center}
+/*
+#anchor,#anchor1,#anchor2,#anchor3{
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+*/
+
+/*==============================서브 1페이지================================*/
+.section1{ width: 100%; position: relative}
+.video_filter{width: 100%; height: 970px; background: rgba(0, 0, 0, 0.6); position: absolute; top:0; left:0; z-index: 5}
+.main_filter{width: 20%; height: 970px; background: #b93131; position: absolute; top:0; left:0; z-index: 6}
+.header-group .logo{position: absolute; top:50%; left:50%; transform: translate(-50%,-50%); z-index: 6}
+.header-group .logo img{width: 50%; margin: 0 auto; display: block}
+.header-group >.header-txt1{position: absolute; top:70%; left:50%; transform: translate(-50%,-50%); z-index: 6; display: block}
+.header-group >.header-txt1 h1{font-family: 'aespa';font-size: 45pt; color:#ffffff}
+.header-group >.header-txt2{position: absolute; top:76%; left:50%; transform: translate(-50%,-50%); z-index: 6; display: block}
+.header-group >.header-txt2 h2{font-family: 'wide';font-size: 20pt; color:#ffffff}
+.header-group >.header-txt2 h2 span{font-family: 'superwide';font-size: 20pt;}
+.header-group >.header-txt2 h2 .barLine{width: 90px; background: #fff; height: 3px;display: inline-block; margin-bottom: 10px;}
+.header-group >.header-txt3{position: absolute; top:50%; left:-5%; transform:rotate(90deg);z-index: 6; color:#ffffff}
+.header-group >.header-txt3 h3{font-family: 'superwide';font-size: 10pt;}
+
+
+.section1-main-video{ width: 100%;  position: relative;  height: 969px;z-index: 1; overflow: hidden;}
+.section1-main-video video{width: 100%; height: auto; margin-left: 1;  margin-top: -55.5px; }
+
+/*=================================서브 3페이지=============================*/
+.progress{display: flex; align-items: center; margin-bottom: 50px;text-align: center;}
+.progress p{text-align: center; font-family: 'Neuzeit Grotesk'; font-size: 20px; color:#111;font-weight: 900;transition: all .3s}
+.progress i{ display:inline-block; font-size: 40px; color:#ddd; margin-top: 20px;transition: all .3s}
+.progress h3{font-size: 40px; font-family: 'Neuzeit Grotesk'; color:#ccc; margin-bottom: 50px;display: flex; align-items: center; margin-left: 20px; }
+.progress h3:before{content: ""; display: block; width: 100px; height: 2px; background: #ddd}
+.progress.design h3:after{content: ""; display: block; width: 100px; height: 2px; background: #ddd}
+.progress.design h3:before{display: none}
+.progress .ect i{font-size: 30px; margin-right: 10px;}
+.progress.design{justify-content: flex-end; margin-right: 200px}
+#container,#container1,#container2,#container3,#container4,#container5,#container6,#container7,#container8{margin: 20px;width: 150px;height: 150px;position: relative;overflow: hidden}
+
+.progress.design>div:hover p{color:#ed8793}
+.progress.design>div:hover i{color:#ed8793}
+
+.progress>div:hover p{color:#5dd6d4}
+.progress>div:hover i{color:#5dd6d4}
+
+
+
+.hidden{display: block;width: 593px;height: 334px;overflow: hidden;position: relative;top: -412px;left: 30px;}
+.hidden>img{display: block; position: relative; top: 0; left: 0;}
+.graph{display: flex}
+/* section5 footer */
+.footer{padding: 86px 0 60px; background: #222;}
+.footer .footer_menu{display: flex; justify-content: center; margin-bottom: 78px;}
+.footer .footer_menu li{margin: 0 25px;}
+.footer .footer_menu li a{color: #0b131a; font-weight: 900; text-transform: uppercase; line-height: 18px;}
+.footer .footer_menu li a:hover{color: #ffba00}
+.footer .svg-inline--fa {
+    color: #0b131a;
+}
+.social_link{display: flex; justify-content: center;}
+.social_link li{margin: 0 6px;}
+.social_link li a{width: 48px; height:48px; display: block; border-radius: 50%; border: 1px solid #ececed; background: #fff; text-align: center; line-height: 58px; font-size: 16px;}
+.copyright{text-align: center; margin-top: 17px; font-size: 16px;}
+
+.back_to_top{opacity: 0;visibility: hidden;position: fixed;left: 50%;margin-left: 604px;bottom: 280px;width: 36px;height: 89px;background: #ffba00;box-sizing: border-box;z-index: 1000;display: flex;justify-content: center;align-items: center;border-radius: 18px;}
+.back_to_top.active{visibility: visible; opacity: 1;}
+
+

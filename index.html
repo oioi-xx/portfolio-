@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>portfolio</title>
+    <meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
+    <meta name='Title' content='hyun portfolio'>
+    <meta name='Keywords' content='portfolio, 포트폴리오, 나의 포트폴리오, 지현 포트폴리오'>
+    <meta name='Author' content='jee hyun'>
+    <meta name='Description' content='저희 포트폴리오에 오신것을 환영합니다'>
+    <meta name='Robots' content='index,follow'>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/fullpage.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/response.css" />
+
+    <!-- open graph (ogp.me) -->
+    <meta property="og:title" content="hyun portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.cjh7652.dothome.co.kr/" />
+    <meta property="og:image" content="https://www.cjh7652.dothome.co.kr/images/logo.jpg" />
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/fullpage.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/ani.js"></script>
+    <script src="js/bar.js"></script>
+    <script src="js/video.js"></script>
+    <script src="./progressbar.js/dist/progressbar.js"></script>
+    <script src="./progressbar.js/dist/progressbar.min.js"></script>
+
+    <!-- 조건부주석 -->
+    <!--[if (lte IE 9)]>
+		<script src='js/lib/IE9.js'></script>
+	<![endif]-->
+</head>
+
+<body>
+    <aside class="fixed_nav">
+        <a href="#firstPage">firstPage</a>
+        <a href="#secondPage" class="active">secondPage</a>
+        <a href="#thirdPage">thirdPage</a>
+        <a href="#forthPage">forthPage</a>
+        <a href="#fifthPage">fifthPage</a>
+        <a href="#sixthPage">sixthPage</a>
+    </aside>
+    <header class="header">
+    </header>
+    <div class="toggle-menu">
+    </div>
+    <div id="fullpage">
+        <div class="section section1" data-anchor="firstPage">
+            <div class="section1-main-video">
+               <div class="video_filter"></div>
+               <div class="main_filter"></div>
+                <video id="mainVideo" data-autoplay muted poster="img/GS-blog-historical-conversions.jpg">
+                    <source src="video/video1.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <div class="header-group">
+                <div class="logo">
+                    <img src="./img/portfoliologo.png" alt="">
+                </div>
+                <div class="header-txt1">
+                    <h1>Dahyun Portfolio</h1>
+                </div>
+                <div class="header-txt2">
+                    <h2>W<span class="wide">E</span>BDESIGN<span class="wide"><span class="barLine"></span>P</span>UBLISING</h2>
+                </div>
+                <div class="header-txt3"><h3>2021-webdesign</h3></div>
+            </div>
+        </div>
+        <div class="section graph" data-anchor="secondPage">
+        </div>
+        <div class="section sub sub3 container" id="sub_con" data-anchor="thirdPage">
+            <div class="container">
+                <div class="sub-title">
+                    <h2>SKILL</h2>
+                    <p>CODING & DESIGN SKILL LIST</p>
+                    <hr>
+                </div>
+                <div class="progress coding">
+                    <div class="html">
+                        <div id="container"></div>
+                        <p class="pro_text html">html</p>
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div id="css">
+                        <div id="container1"></div>
+                        <p class="pro_text css">css</p>
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div id="javascript">
+                        <div id="container2"></div>
+                        <p class="pro_text javascript">javascript</p>
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="jquery">
+                        <div id="container3"></div>
+                        <p class="pro_text jquery">jquery</p>
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="ect">
+                        <div id="container4"></div>
+                        <p class="pro_text ect">ect</p>
+                        <i class="fab fa-sass"></i>
+                        <i class="fab fa-less"></i>
+                        <i class="fab fa-php"></i>
+                    </div>
+                    <h3>&nbsp;&nbsp;coding skill</h3>
+                </div>
+                <div class="progress design">
+                    <h3>&nbsp;&nbsp;design skill</h3>
+                    <div class="photoshop">
+                        <div id="container5"></div>
+                        <p class="pro_text photoshop">photoshop</p>
+                        <i class="far fa-object-ungroup"></i>
+                    </div>
+                    <div id="illust">
+                        <div id="container6"></div>
+                        <p class="pro_text illust">illust</p>
+                        <i class="fas fa-bezier-curve"></i>
+                    </div>
+                    <div id="indesign">
+                        <div id="container7"></div>
+                        <p class="pro_text indesign">indesign</p>
+                        <i class="fas fa-ruler"></i>
+                    </div>
+                    <div class="figma">
+                        <div id="container8"></div>
+                        <p class="pro_text figma">figma</p>
+                        <i class="fab fa-figma"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" data-anchor="forthPage"></div>
+        <div class="section" data-anchor="fifthPage"></div>
+        <div class="section" data-anchor="sixthPage"></div>
+        <div class="section fp-auto-height footer"></div>
+    </div>
+</body>
+
+</html>
